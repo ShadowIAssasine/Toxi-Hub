@@ -26,6 +26,14 @@ OrionLib:MakeNotification({
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/Main/Toxi-CMD.lua"))();
 
+-- Values
+
+--->
+
+-- Functions
+
+--->
+
 -- Player
 
 local PlayerTab = Window:MakeTab({
@@ -56,7 +64,7 @@ PlayerTab:AddSlider({
 	Increment = 1,
 	ValueName = "Speed",
 	Callback = function(Value)
-		
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 		print(Value)
 	end    
 })
@@ -70,7 +78,7 @@ PlayerTab:AddSlider({
 	Increment = 1,
 	ValueName = "Power",
 	Callback = function(Value)
-		
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 		print(Value)
 	end    
 })
@@ -101,13 +109,7 @@ local ToolsSection = ToolsTab:AddSection({
 	Name = "Tools"
 })
 
-ToolsTab:AddButton({
-	Name = "Toxi CMD",
-	Callback = function()
-			
-      		print("Loading...")
-  	end    
-})
+-- Buttons
 
 ToolsTab:AddButton({
 	Name = "AimHub",
@@ -124,6 +126,8 @@ ToolsTab:AddButton({
       		print("Loading...")
   	end    
 })
+
+-- Games
 
 ---
 
