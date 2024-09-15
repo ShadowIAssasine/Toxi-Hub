@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Toxi Hub // Main Hub 										     v0.2.1", HidePremium = false, IntroText = "Toxi Hub | Main Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Toxi Hub // Main Access 										v0.2.1", HidePremium = false, IntroText = "Toxi Hub | Main Access", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -16,7 +16,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 -- Loaded
 
 OrionLib:MakeNotification({
-	Name = "Toxi Hub // Main Hub",
+	Name = "Toxi Hub // Main Access",
 	Content = "Successfully Logged in. Welcome back!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
@@ -38,12 +38,13 @@ local Section = GeneralTab:AddSection({
 	Name = "General"
 })
 
-GeneralTab:AddButton({
+GeneralTab:AddToggle({
 	Name = "Admin Access",
-	Callback = function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/admin_login.lua"))()
-      		print("Verifying Access...")
-  	end    
+	Default = false,
+	Callback = function(Value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/admin_login.lua"))()
+		print(Value)
+	end    
 })
 
 
@@ -59,11 +60,11 @@ local Section = GameTab:AddSection({
 	Name = "A"
 })
 
-GameTab:AddButton({
+AdminTab:AddButton({
 	Name = "Airsoft Battles",
 	Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/game_library/a/airsoft-battles.lua"))()
-      		print("Loading Script...")
+      		print("Loading Hub...")
   	end    
 })
 
