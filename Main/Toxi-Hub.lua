@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Toxi Hub | Universal v0.1-dev", HidePremium = true, IntroText = "Toxi Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Toxi Hub | Universal v0.1-dev", HidePremium = false, IntroText = "Toxi Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -35,7 +35,7 @@ local PlayerTab = Window:MakeTab({
 })
 
 local PlayerSection = PlayerTab:AddSection({
-	Name = "Player"
+	Name = "Health"
 })
 
 PlayerTab:AddToggle({
@@ -45,6 +45,10 @@ PlayerTab:AddToggle({
 
 		print(Value)
 	end    
+})
+
+local PlayerSection = PlayerTab:AddSection({
+	Name = "Movement"
 })
 
 PlayerTab:AddSlider({
@@ -94,7 +98,7 @@ local MiscSection = MiscTab:AddSection({
 local ToolsTab = Window:MakeTab({
 	Name = "Tools",
 	Icon = "rbxassetid://4483345998",
-	PremiumOnly = true
+	PremiumOnly = false
 })
 
 local ToolsSection = ToolsTab:AddSection({
