@@ -1742,7 +1742,7 @@ if IsOnMobile then
 	end)
 
 end
-cmd.add({"commandcount","cc"},{"commandcount (cc)","Counds how many commands NA has"},function()
+cmd.add({"commandcount","cc"},{"commandcount (cc)","Counds how many commands Toxi CMD has"},function()
 	DoNotif(adminName.." currently has ".. commandcount.." commands",5)
 end)
 
@@ -15392,7 +15392,7 @@ ImageButton.BackgroundColor3=Color3.fromRGB(255,255,255)
 ImageButton.BorderSizePixel=0
 ImageButton.Position=UDim2.new(0.48909232,0,-1,0)
 ImageButton.Size=UDim2.new(0,32,0,33)
-ImageButton.Image="rbxassetid://18567102564"
+ImageButton.Image="rbxassetid://123474111"
 ImageButton.ZIndex=9999
 
 
