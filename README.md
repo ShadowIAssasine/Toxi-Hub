@@ -1,6 +1,8 @@
-# Toxi-Hub v0.1-dev
+-- Toxi-Hub v0.7
 
 Roblox Hub for Multiple Script's
+
+-------------------------------------------------------------
 
 --> What's Granted in the Hub:
 
@@ -12,7 +14,7 @@ Pro's:
 + A HUGE Library of Script's
 + Stable Client
 
-
+-------------------------------------------------------------
 
 Contra's:
 
@@ -20,5 +22,4 @@ Contra's:
 - Bug's DEFINITELY Happening
 - Key Required
 
--->
-
+-------------------------------------------------------------
