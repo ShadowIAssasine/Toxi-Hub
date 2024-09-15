@@ -24,7 +24,7 @@ OrionLib:MakeNotification({
 
 -- Toxi CMD
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/main/Toxi-CMD.lua"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/tools/toxi_cmd.lua"))();
 
 -- Admin Tools
 
@@ -43,6 +43,14 @@ AdminTab:AddButton({
 	Callback = function()
 			loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
       		print("BTools Granted")
+  	end    
+})
+
+AdminTab:AddButton({
+	Name = "Admin GUI",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/tools/admin_gui.lua"))()
+      		print("")
   	end    
 })
 
