@@ -53,7 +53,7 @@ local Section = PlayerTab:AddSection({
 
 PlayerTab:AddSlider({
 	Name = "Movement Speed",
-	Min = 15,
+	Min = 10,
 	Max = 500,
 	Default = 15,
 	Color = Color3.fromRGB(255,255,255),
