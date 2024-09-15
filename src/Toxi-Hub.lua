@@ -34,7 +34,7 @@ local PlayerTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = PlayerTab:AddSection({
+local PlayerSection = PlayerTab:AddSection({
 	Name = "Health"
 })
 
@@ -47,7 +47,7 @@ PlayerTab:AddToggle({
 	end    
 })
 
-local Section = PlayerTab:AddSection({
+local PlayerSection = PlayerTab:AddSection({
 	Name = "Movement"
 })
 
