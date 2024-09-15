@@ -1,4 +1,4 @@
-﻿local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Toxi Hub // Airsoft Battles", HidePremium = false, IntroText = "Toxi Hub | Airsoft Battles", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
@@ -14,7 +14,6 @@ CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 
 -- Loaded
-
 OrionLib:MakeNotification({
 	Name = "Toxi Hub // Airsoft Battles",
 	Content = "Successfully Logged in. Welcome back!",
@@ -24,12 +23,10 @@ OrionLib:MakeNotification({
 
 
 -- Toxi CMD
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/tools/toxi_cmd.lua"))();
 
 
 -- General
-
 local GeneralTab = Window:MakeTab({
 	Name = "General",
 	Icon = "rbxassetid://4483345998",
@@ -50,7 +47,6 @@ GeneralTab:AddButton({
 
 
 -- Player Tab
-
 local PlayerTab = Window:MakeTab({
 	Name = "Player",
 	Icon = "rbxassetid://4483345998",
@@ -124,7 +120,6 @@ PlayerTab:AddTextbox({
 
 
 -- Game Tab
-
 local GameTab = Window:MakeTab({
 	Name = "Game",
 	Icon = "rbxassetid://4483345998",
@@ -182,7 +177,6 @@ GameTab:AddButton({
 
 
 -- Settings
-
 local SettingsTab = Window:MakeTab({
 	Name = "Settings",
 	Icon = "rbxassetid://4483345998",
@@ -201,8 +195,5 @@ SettingsTab:AddButton({
   	end    
 })
 
------
-
 -- Without it, the Hub won't Work.
-
 orionlib:Init()
