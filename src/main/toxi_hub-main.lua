@@ -38,13 +38,12 @@ local Section = GeneralTab:AddSection({
 	Name = "General"
 })
 
-GeneralTab:AddToggle({
+GeneralTab:AddButton({
 	Name = "Admin Access",
-	Default = false,
-	Callback = function(Value)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/admin_login.lua"))()
-		print(Value)
-	end    
+	Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/admin_login.lua"))()
+      		print("Loading Hub...")
+  	end    
 })
 
 
