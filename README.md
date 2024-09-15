@@ -11,7 +11,8 @@ Pro's:
 + Support's Keybinds
 + A HUGE Library of Script's
 + Stable Client
-~>
+
+-->
 
 
 Contra's:
@@ -19,5 +20,6 @@ Contra's:
 - This is NOT Open Source
 - Bug's DEFINITELY Happening
 - Key Required
-~>
+
+-->
 
