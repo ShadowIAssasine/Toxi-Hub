@@ -62,6 +62,15 @@ local PlayerTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+PlayerTab:AddButton({
+	Name = "Suicide/Reset",
+	Callback = function()
+			game.Players.LocalPlayer.Character.Humanoid.Health = 0
+      		print("Character Reset done!"")
+  	end    
+})
+
+
 local Section = PlayerTab:AddSection({
 	Name = "Health"
 })
@@ -70,9 +79,33 @@ PlayerTab:AddToggle({
 	Name = "Godmode",
 	Default = false,
 	Callback = function(Value)
-
+		game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
 		print(Value)
 	end    
+})
+
+PlayerTab:AddSlider({
+	Name = "Health",
+	Min = 100,
+	Max = 999999999,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Power",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.Health = Value
+		print(Value)
+	end    
+})
+
+PlayerTab:AddTextbox({
+	Name = "Custom Health",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.Health = Value
+		print(Value)
+	end	  
 })
 
 local Section = PlayerTab:AddSection({
