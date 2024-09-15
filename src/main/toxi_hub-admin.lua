@@ -170,7 +170,7 @@ local Section = ToolsTab:AddSection({
 ToolsTab:AddButton({
 	Name = "DEX Viewer",
 	Callback = function()
-			loadstring(game:HttpGet("https://gist.githubusercontent.com/RandomScripter21/d91f91d519503017e17cc819d1d31d32/raw/163080eac843735ec74f4258f1fd0aa4c7328e1f/DarkDex"))()
+			loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
       		print("Loading...")
   	end    
 })
