@@ -4,7 +4,7 @@ local Player = game.Players.LocalPlayer
  
 -- Main Window
 local MainWindow = OrionLib:MakeWindow({
-    Name = "Toxi Hub",
+    Name = "Toxi Hub | LogIn",
     HidePremium = false,
     SaveConfig = true,
     IntroEnabled = false
