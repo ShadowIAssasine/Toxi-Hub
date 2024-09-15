@@ -26,14 +26,6 @@ OrionLib:MakeNotification({
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/Main/Toxi-CMD.lua"))();
 
--- Values
-
---->
-
--- Functions
-
---->
-
 -- Player
 
 local PlayerTab = Window:MakeTab({
@@ -42,6 +34,8 @@ local PlayerTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local PlayerSection = PlayerTab:AddSection({
+	Name = "Player"
 })
 
 PlayerTab:AddToggle({
@@ -51,10 +45,6 @@ PlayerTab:AddToggle({
 
 		print(Value)
 	end    
-})
-
-local Section = PlayerTab:AddSection({
-	Name = "Movement"
 })
 
 PlayerTab:AddSlider({
@@ -111,12 +101,18 @@ local ToolsSection = ToolsTab:AddSection({
 	Name = "Tools"
 })
 
--- Buttons
+ToolsTab:AddButton({
+	Name = "Toxi CMD",
+	Callback = function()
+			
+      		print("Loading...")
+  	end    
+})
 
 ToolsTab:AddButton({
 	Name = "AimHub",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
       		print("Loading...")
   	end    
 })
@@ -124,12 +120,10 @@ ToolsTab:AddButton({
 ToolsTab:AddButton({
 	Name = "DEX Viewer",
 	Callback = function()
-		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+			loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
       		print("Loading...")
   	end    
 })
-
--- Games
 
 ---
 
