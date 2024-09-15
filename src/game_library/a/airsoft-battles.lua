@@ -1,5 +1,5 @@
 ﻿local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Toxi Hub // Airsoft Battles 										v0.2.1", HidePremium = false, IntroText = "Toxi Hub | Airsoft Battles", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Toxi Hub // Assault Battles 										v0.2.1", HidePremium = false, IntroText = "Toxi Hub | Assault Battles", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -16,7 +16,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 -- Loaded
 
 OrionLib:MakeNotification({
-	Name = "Toxi Hub // Airsoft Battles",
+	Name = "Toxi Hub // Assault Battles",
 	Content = "Successfully Logged in. Welcome back!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
@@ -128,7 +128,7 @@ PlayerTab:AddTextbox({
 GameTab:AddButton({
 	Name = "Kill All (Rejoin to Disable)",
 	Callback = function()
-                	loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/game_library/%23scripts/airsoft_battles-script_1.lua"))()
+                loadstring(game:HttpGet(" "))()
       		print("Loading Hub...")
   	end    
 })
