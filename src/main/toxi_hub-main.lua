@@ -38,7 +38,7 @@ local Section = GeneralTab:AddSection({
 	Name = "General"
 })
 
-AdminTab:AddButton({
+GeneralTab:AddButton({
 	Name = "Admin Access",
 	Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/admin_login.lua"))()
@@ -55,11 +55,11 @@ local GameTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = GameTab:AddSection({
+local Section = GameATab:AddSection({
 	Name = "A"
 })
 
-AdminTab:AddButton({
+GameATab:AddButton({
 	Name = "Airsoft Battles",
 	Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/game_library/a/airsoft-battles.lua"))()
