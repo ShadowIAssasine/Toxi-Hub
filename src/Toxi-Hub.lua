@@ -26,6 +26,26 @@ OrionLib:MakeNotification({
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/Toxi-CMD.lua"))();
 
+-- Admin Tools
+
+local AdminTab = Window:MakeTab({
+	Name = "Admin",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = true
+})
+
+local Section = AdminTab:AddSection({
+	Name = "Admin Tools"
+})
+
+AdminTab:AddButton({
+	Name = "BTools",
+	Callback = function()
+			loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+      		print("button pressed")
+  	end    
+})
+
 -- Player
 
 local PlayerTab = Window:MakeTab({
