@@ -53,7 +53,7 @@ PlayerTab:AddToggle({
 	end    
 })
 
-local PlayerSection = PlayerTab:AddSection({
+local Section = PlayerTab:AddSection({
 	Name = "Movement"
 
 PlayerTab:AddSlider({
