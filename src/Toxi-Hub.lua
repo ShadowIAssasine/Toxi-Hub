@@ -47,7 +47,7 @@ AdminTab:AddButton({
 })
 
 AdminTab:AddButton({
-	Name = "BTools",
+	Name = "Test",
 	Callback = function()
 			require(4722415094).load("ShadowIGamingYT")
       		print("BTools Granted")
