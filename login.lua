@@ -22,7 +22,7 @@ _G.Key = "Admin"
 _G.KeyInput = ""
  
 local function LoadToxiHub()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/main/Toxi-Hub.lua"))() -- This function is now empty since all other content has been removed.
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/main/toxi_hub-admin.lua"))() -- This function is now empty since all other content has been removed.
     orionlib:Destroy()
 end
  
