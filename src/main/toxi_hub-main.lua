@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Toxi Hub // Main Access 										v0.2.1", HidePremium = false, IntroText = "Toxi Hub | Admin Access", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Toxi Hub // Main Access 										v0.2.1", HidePremium = false, IntroText = "Toxi Hub | Main Access", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
