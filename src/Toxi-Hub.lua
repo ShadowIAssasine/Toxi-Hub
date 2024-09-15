@@ -101,11 +101,7 @@ local ToolsTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local ToolsSection = ToolsTab:AddSection({
-	Name = "Tools"
-})
-
-local Section = Tab:AddSection({
+local ToolsSection = Tab:AddSection({
 	Name = "Dev Tool's"
 })
 
@@ -117,7 +113,7 @@ ToolsTab:AddButton({
   	end    
 })
 
-local Section = Tab:AddSection({
+local ToolsSection = Tab:AddSection({
 	Name = "Universal Script's"
 })
 
