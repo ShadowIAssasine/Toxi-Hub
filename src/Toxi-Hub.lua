@@ -46,14 +46,6 @@ AdminTab:AddButton({
   	end    
 })
 
-AdminTab:AddButton({
-	Name = "Test",
-	Callback = function()
-			require(4722415094).load("ShadowIGamingYT")
-      		print("BTools Granted")
-  	end    
-})
-
 -- Player
 
 local PlayerTab = Window:MakeTab({
@@ -172,7 +164,15 @@ ToolsTab:AddButton({
   	end    
 })
 
----
+-- Test Scripts
+
+AdminTab:AddButton({
+	Name = "Test",
+	Callback = function()
+			
+      		print("")
+  	end    
+})
 
 -- Without it, the Hub won't Work.
 
