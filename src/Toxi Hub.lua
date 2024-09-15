@@ -128,9 +128,24 @@ local MiscTab = Window:MakeTab({
 })
 
 local MiscSection = MiscTab:AddSection({
-	Name = "Misc"
+	Name = "Premium Features"
 })
 
+AdminTab:AddButton({
+	Name = "Red Demon",
+	Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/animated/red-demon.lua"))();
+      		print("")
+  	end    
+})
+
+AdminTab:AddButton({
+	Name = "Skull Demon",
+	Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/animated/skull-demon.lua"))();
+      		print("")
+  	end    
+})
 
 -- Tools
 
