@@ -62,7 +62,7 @@ local Section = GameTab:AddSection({
 GameTab:AddButton({
 	Name = "Airsoft Battles",
 	Callback = function()
-			    loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/gamelibrary/airsoft-battles.lua"))()
+			    loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/airsoft-battles.lua"))()
       		print("Loading Hub...")
   	end    
 })
