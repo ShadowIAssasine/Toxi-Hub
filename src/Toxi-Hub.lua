@@ -42,7 +42,7 @@ AdminTab:AddButton({
 	Name = "BTools",
 	Callback = function()
 			loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
-      		print("button pressed")
+      		print("BTools Granted")
   	end    
 })
 
@@ -87,7 +87,7 @@ PlayerTab:AddSlider({
 
 PlayerTab:AddTextbox({
 	Name = "Custom Movement Speed",
-	Default = "default box input",
+	Default = "Speed",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
@@ -109,6 +109,15 @@ PlayerTab:AddSlider({
 	end    
 })
 
+PlayerTab:AddTextbox({
+	Name = "Custom Jump Power",
+	Default = "Jump",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+		print(Value)
+	end	  
+})
 
 -- Misc
 
