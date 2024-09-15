@@ -1,6 +1,3 @@
-local Aimbot = loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()
-Aimbot.Load()
-
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Toxi Hub | Universal v0.1-dev", HidePremium = false, IntroText = "Toxi Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
 
@@ -115,7 +112,7 @@ ToolsTab:AddButton({
 ToolsTab:AddButton({
 	Name = "AimHub",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
       		print("Loading...")
   	end    
 })
