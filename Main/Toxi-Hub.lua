@@ -55,6 +55,7 @@ PlayerTab:AddToggle({
 
 local Section = PlayerTab:AddSection({
 	Name = "Movement"
+})
 
 PlayerTab:AddSlider({
 	Name = "Movement Speed",
