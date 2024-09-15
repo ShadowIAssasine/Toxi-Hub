@@ -12,8 +12,6 @@ Pro's:
 + A HUGE Library of Script's
 + Stable Client
 
--->
-
 
 Contra's:
 
