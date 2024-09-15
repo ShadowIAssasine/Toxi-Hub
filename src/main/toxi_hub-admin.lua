@@ -66,13 +66,35 @@ local Section = PlayerTab:AddSection({
 	Name = "Health"
 })
 
-PlayerTab:AddToggle({
+PlayerTab:AddButton({
 	Name = "Godmode",
-	Default = false,
-	Callback = function(Value)
+	Callback = function()
+		game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+      		print("Godmode Activated!")
+  	end    
+})
 
+PlayerTab:AddSlider({
+	Name = "Health",
+	Min = 0,
+	Max = 999999999,
+	Default = 100,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "HP",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.Health = Value
 		print(Value)
 	end    
+})
+
+
+PlayerTab:AddButton({
+	Name = "Suicide/Reset",
+	Callback = function()
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+      		print("Suicide/Reset Complete!")
+  	end    
 })
 
 local Section = PlayerTab:AddSection({
@@ -86,7 +108,7 @@ PlayerTab:AddSlider({
 	Default = 15,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
-	ValueName = "Speed",
+	ValueName = "MS",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 		print(Value)
@@ -110,7 +132,7 @@ PlayerTab:AddSlider({
 	Default = 50,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
-	ValueName = "Power",
+	ValueName = "JP",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 		print(Value)
