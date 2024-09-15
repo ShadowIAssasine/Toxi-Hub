@@ -24,7 +24,7 @@ OrionLib:MakeNotification({
 
 -- Toxi CMD
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/Toxi-CMD.lua"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/main/Toxi-CMD.lua"))();
 
 -- Admin Tools
 
