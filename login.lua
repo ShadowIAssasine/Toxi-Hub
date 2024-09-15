@@ -18,7 +18,7 @@ OrionLib:MakeNotification({
 })
  
 -- Global Variables
-_G.Key = "Admin"
+_G.Key = "KEY-A710-SYS0-TYQ9-CLA9-SY46"
 _G.KeyInput = ""
  
 local function LoadToxiHub()
