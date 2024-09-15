@@ -42,8 +42,6 @@ local PlayerTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local PlayerSection = PlayerTab:AddSection({
-	Name = "Player"
 })
 
 PlayerTab:AddToggle({
@@ -54,6 +52,9 @@ PlayerTab:AddToggle({
 		print(Value)
 	end    
 })
+
+local PlayerSection = PlayerTab:AddSection({
+	Name = "Movement"
 
 PlayerTab:AddSlider({
 	Name = "Movement Speed",
