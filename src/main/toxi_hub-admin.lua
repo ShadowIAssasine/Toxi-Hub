@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Toxi Hub // Admin Access 										v0.7", HidePremium = false, IntroText = "Toxi Hub | Admin Access", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Toxi Hub // Admin Access 										v0.2.1", HidePremium = false, IntroText = "Toxi Hub | Admin Access", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -66,35 +66,13 @@ local Section = PlayerTab:AddSection({
 	Name = "Health"
 })
 
-PlayerTab:AddButton({
+PlayerTab:AddToggle({
 	Name = "Godmode",
-	Callback = function()
-		game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
-      		print("Godmode Activated!")
-  	end    
-})
-
-PlayerTab:AddSlider({
-	Name = "Health",
-	Min = 0,
-	Max = 999999999,
-	Default = 100,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "HP",
+	Default = false,
 	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.Health = Value
+
 		print(Value)
 	end    
-})
-
-
-PlayerTab:AddButton({
-	Name = "Suicide/Reset",
-	Callback = function()
-		game.Players.LocalPlayer.Character.Humanoid.Health = 0
-      		print("Suicide/Reset Complete!")
-  	end    
 })
 
 local Section = PlayerTab:AddSection({
@@ -108,7 +86,7 @@ PlayerTab:AddSlider({
 	Default = 15,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
-	ValueName = "MS",
+	ValueName = "Speed",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 		print(Value)
@@ -132,7 +110,7 @@ PlayerTab:AddSlider({
 	Default = 50,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 1,
-	ValueName = "JP",
+	ValueName = "Power",
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 		print(Value)
