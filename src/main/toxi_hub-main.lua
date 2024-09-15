@@ -42,7 +42,7 @@ GeneralTab:AddButton({
 	Name = "Admin Access",
 	Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/admin_login.lua"))()
-      		print("Loading Hub...")
+      		print("Verifying Access...")
   	end    
 })
 
@@ -63,7 +63,7 @@ GameTab:AddButton({
 	Name = "Airsoft Battles",
 	Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/game_library/a/airsoft-battles.lua"))()
-      		print("Loading Hub...")
+      		print("Loading Script...")
   	end    
 })
 
