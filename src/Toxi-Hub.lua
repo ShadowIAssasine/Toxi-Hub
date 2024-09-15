@@ -105,26 +105,26 @@ local ToolsSection = ToolsTab:AddSection({
 	Name = "Tools"
 })
 
-ToolsTab:AddButton({
-	Name = "Toxi CMD",
-	Callback = function()
-			
-      		print("Loading...")
-  	end    
-})
-
-ToolsTab:AddButton({
-	Name = "AimHub",
-	Callback = function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
-      		print("Loading...")
-  	end    
+local Section = Tab:AddSection({
+	Name = "Dev Tool's"
 })
 
 ToolsTab:AddButton({
 	Name = "DEX Viewer",
 	Callback = function()
 			loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+      		print("Loading...")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Universal Script's"
+})
+
+ToolsTab:AddButton({
+	Name = "AimHub",
+	Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
       		print("Loading...")
   	end    
 })
