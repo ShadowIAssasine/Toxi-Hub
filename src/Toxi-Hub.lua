@@ -85,6 +85,16 @@ PlayerTab:AddSlider({
 	end    
 })
 
+PlayerTab:AddTextbox({
+	Name = "Custom Movement Speed",
+	Default = "default box input",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+		print(Value)
+	end	  
+})
+
 PlayerTab:AddSlider({
 	Name = "Jump Power",
 	Min = 50,
