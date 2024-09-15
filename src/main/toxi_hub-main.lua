@@ -38,15 +38,13 @@ local Section = GeneralTab:AddSection({
 	Name = "General"
 })
 
-GeneralTab:AddToggle({
-	Name = "Admin Access",
-	Default = false,
-	Callback = function(Value)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/admin_login.lua"))()
-		print(Value)
-	end    
+GeneralTab:AddButton({
+	Name = "Airsoft Battles",
+	Callback = function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/admin_login.lua"))()
+      		print("Loading Hub...")
+  	end    
 })
-
 
 -- Game Library
 
