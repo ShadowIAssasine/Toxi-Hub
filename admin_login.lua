@@ -4,14 +4,14 @@ local Player = game.Players.LocalPlayer
  
 -- Main Window
 local MainWindow = OrionLib:MakeWindow({
-    Name = "Toxi Hub // LogIn",
+    Name = "Toxi Hub // Admin LogIn",
     HidePremium = false,
     SaveConfig = true,
     IntroEnabled = false
 })
  
 OrionLib:MakeNotification({
-    Name = "Welcome To Toxi Hub!",
+    Name = "Welcome back!",
     Content = "You Are Logged In As "..Player.Name..".",
     Image = "rbxassetid://4483345998",
     Time = 5
