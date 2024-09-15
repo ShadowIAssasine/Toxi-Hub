@@ -124,14 +124,14 @@ PlayerTab:AddTextbox({
 local MiscTab = Window:MakeTab({
 	Name = "Misc",
 	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+	PremiumOnly = true
 })
 
 local MiscSection = MiscTab:AddSection({
 	Name = "Premium Features"
 })
 
-AdminTab:AddButton({
+MiscTab:AddButton({
 	Name = "Red Demon",
 	Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/animated/red-demon.lua"))();
@@ -139,7 +139,7 @@ AdminTab:AddButton({
   	end    
 })
 
-AdminTab:AddButton({
+MiscTab:AddButton({
 	Name = "Skull Demon",
 	Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/animated/skull-demon.lua"))();
