@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Toxi Hub | Admin Access v0.4-dev", HidePremium = false, IntroText = "Toxi Hub | Admin Access", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Toxi Hub // Admin Access 			v0.7", HidePremium = false, IntroText = "Toxi Hub | Admin Access", SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -16,8 +16,8 @@ CloseCallback = <function> - Function to execute when the window is closed.
 -- Loaded
 
 OrionLib:MakeNotification({
-	Name = "Toxi Hub | Admin Access",
-	Content = "Welcome back "..Player.Name..".",
+	Name = "Toxi Hub // Admin Access",
+	Content = "Successfully Logged in. Welcome back!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
