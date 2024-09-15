@@ -55,11 +55,11 @@ local GameTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = GameATab:AddSection({
+local Section = GameTab:AddSection({
 	Name = "A"
 })
 
-GameATab:AddButton({
+GameTab:AddButton({
 	Name = "Airsoft Battles",
 	Callback = function()
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/game_library/a/airsoft-battles.lua"))()
