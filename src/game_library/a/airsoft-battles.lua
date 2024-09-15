@@ -128,7 +128,7 @@ PlayerTab:AddTextbox({
 GameTab:AddButton({
 	Name = "Kill All (Rejoin to Disable)",
 	Callback = function()
-                loadstring(game:HttpGet(" "))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/game_library/%23scripts/assault_battles-script_1.lua"))()
       		print("Loading Hub...")
   	end    
 })
