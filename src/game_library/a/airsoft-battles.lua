@@ -59,7 +59,7 @@ local Section = PlayerTab:AddSection({
 })
 
 PlayerTab:AddToggle({
-	Name = "Godmode",
+	Name = "No Health Mods possible due 1-Shot Tag. (Airsoft Rules)",
 	Default = false,
 	Callback = function(Value)
 
