@@ -9,11 +9,15 @@ Pro's:
 + Undetected since it's New!
 + Support's Commands
 + Support's Keybinds
++ A HUGE Library of Script's
++ Stable Client
+~>
 
 
 Contra's:
 
+- This is NOT Open Source
 - Bug's DEFINITELY Happening
-
--->
+- Key Required
+~>
 
