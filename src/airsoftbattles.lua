@@ -40,7 +40,7 @@ local Section = GeneralTab:AddSection({
 GeneralTab:AddButton({
 	Name = "DEX Viewer (Only for Script Dev's)",
 	Callback = function()
-			loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/tools/dex.lua"))()
       		print("Loading...")
   	end    
 })
@@ -116,6 +116,31 @@ PlayerTab:AddTextbox({
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 		print(Value)
 	end	  
+})
+
+
+-- Weapons Tab
+local WeaponTab = Window:MakeTab({
+	Name = "Weapons",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = WeaponTab:AddSection({
+	Name = "Ammo & Damage"
+})
+
+WeaponTab:AddButton({
+	Name = "Kill All (Rejoin to Disable)",
+	Callback = function()
+				local function preventModification()
+					ammoValue.Changed:Connect(function()
+						ammoValue.Value = 1e30 -- reset to infinite
+					end)
+				end
+				preventModification()
+      		print("Loading Hub...")
+  	end    
 })
 
 
