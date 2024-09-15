@@ -34,7 +34,7 @@ local PlayerTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local PlayerSection = PlayerTab:AddSection({
+local Section = PlayerTab:AddSection({
 	Name = "Health"
 })
 
@@ -47,7 +47,7 @@ PlayerTab:AddToggle({
 	end    
 })
 
-local PlayerSection = PlayerTab:AddSection({
+local Section = PlayerTab:AddSection({
 	Name = "Movement"
 })
 
@@ -101,7 +101,7 @@ local ToolsTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local ToolsSection = ToolsTab:AddSection({
+local Section = ToolsTab:AddSection({
 	Name = "Dev Tools"
 })
 
@@ -113,7 +113,7 @@ ToolsTab:AddButton({
   	end    
 })
 
-local ToolsSection = ToolsTab:AddSection({
+local Section = ToolsTab:AddSection({
 	Name = "Universal Scripts"
 })
 
