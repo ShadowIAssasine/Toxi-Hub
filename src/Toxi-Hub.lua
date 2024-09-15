@@ -102,7 +102,7 @@ local ToolsTab = Window:MakeTab({
 })
 
 local ToolsSection = ToolsTab:AddSection({
-	Name = "Dev Tool's"
+	Name = "Dev Tools"
 })
 
 ToolsTab:AddButton({
@@ -114,7 +114,7 @@ ToolsTab:AddButton({
 })
 
 local ToolsSection = ToolsTab:AddSection({
-	Name = "Universal Script's"
+	Name = "Universal Scripts"
 })
 
 ToolsTab:AddButton({
