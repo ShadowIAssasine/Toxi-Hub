@@ -16,7 +16,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 -- Loaded
 
 OrionLib:MakeNotification({
-	Name = "Toxi Hub // Main Access",
+	Name = "Toxi Hub // Main Hub",
 	Content = "Successfully Logged in. Welcome back!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
