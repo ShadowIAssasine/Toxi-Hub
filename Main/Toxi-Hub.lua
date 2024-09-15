@@ -112,6 +112,7 @@ ToolsTab:AddButton({
 ToolsTab:AddButton({
 	Name = "AimHub",
 	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub-V2/main/src/Main.lua"))()
       		print("Loading...")
   	end    
 })
@@ -119,6 +120,7 @@ ToolsTab:AddButton({
 ToolsTab:AddButton({
 	Name = "DEX Viewer",
 	Callback = function()
+		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
       		print("Loading...")
   	end    
 })
