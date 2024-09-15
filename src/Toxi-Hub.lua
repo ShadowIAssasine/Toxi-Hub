@@ -31,7 +31,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-
 local AdminTab = Window:MakeTab({
 	Name = "Admin",
 	Icon = "rbxassetid://4483345998",
-	PremiumOnly = true
+	PremiumOnly = false
 })
 
 local Section = AdminTab:AddSection({
@@ -87,7 +87,7 @@ PlayerTab:AddSlider({
 
 PlayerTab:AddTextbox({
 	Name = "Custom Movement Speed",
-	Default = "Speed",
+	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
@@ -111,7 +111,7 @@ PlayerTab:AddSlider({
 
 PlayerTab:AddTextbox({
 	Name = "Custom Jump Power",
-	Default = "Jump",
+	Default = "",
 	TextDisappear = true,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
