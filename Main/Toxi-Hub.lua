@@ -94,7 +94,7 @@ local MiscSection = MiscTab:AddSection({
 local ToolsTab = Window:MakeTab({
 	Name = "Tools",
 	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+	PremiumOnly = true
 })
 
 local ToolsSection = ToolsTab:AddSection({
