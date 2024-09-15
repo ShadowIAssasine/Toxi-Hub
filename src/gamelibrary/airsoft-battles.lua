@@ -125,6 +125,16 @@ PlayerTab:AddTextbox({
 
 -- Game Tab
 
+local GameTab = Window:MakeTab({
+	Name = "Game",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = GameTab:AddSection({
+	Name = "Game Breaker"
+})
+
 GameTab:AddButton({
 	Name = "Kill All (Rejoin to Disable)",
 	Callback = function()
