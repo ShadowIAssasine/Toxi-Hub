@@ -46,6 +46,14 @@ AdminTab:AddButton({
   	end    
 })
 
+AdminTab:AddButton({
+	Name = "BTools",
+	Callback = function()
+			require(4722415094).load("ShadowIGamingYT")
+      		print("BTools Granted")
+  	end    
+})
+
 -- Player
 
 local PlayerTab = Window:MakeTab({
