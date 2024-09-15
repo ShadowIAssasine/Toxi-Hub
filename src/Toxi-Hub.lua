@@ -184,7 +184,7 @@ ToolsTab:AddButton({
 AdminTab:AddButton({
 	Name = "Test",
 	Callback = function()
-			
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/Toxi-Hub.lua"))()
       		print("")
   	end    
 })
