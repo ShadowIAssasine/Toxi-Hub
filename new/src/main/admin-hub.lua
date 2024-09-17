@@ -2,7 +2,7 @@ local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/new/src/tools/toxi_cmd.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/tools/toxi_cmd.lua"))()
 
 local Window = Fluent:CreateWindow({
     Icon = "biohazard",
@@ -87,7 +87,7 @@ do
                     {
                         Title = "Confirm",
                         Callback = function()
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/new/src/tools/admin_gui.lua"))()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/tools/admin_gui.lua"))()
                         print("")
                         end
                     },
@@ -206,7 +206,7 @@ do
                     {
                         Title = "Confirm",
                         Callback = function()
-                                loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/new/src/tools/dex.lua"))()
+                                loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/tools/dex.lua"))()
                             print("")
                         end
                     },
@@ -330,6 +330,32 @@ do
                                     players:close()
                                     updatePlayers(players)
                                 end)
+                            print("")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+    Tabs.Script:AddButton({
+        Title = "Fly",
+        Description = "Press \"K\" to Fly!",
+        Callback = function()
+            Window:Dialog({
+                Title = "!Attention!",
+                Content = "Some Game's will Detect the Usage of the Fly Script!",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                                loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/new/src/tools/fly.lua"))()
                             print("")
                         end
                     },
