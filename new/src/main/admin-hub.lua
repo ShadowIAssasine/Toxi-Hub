@@ -344,7 +344,7 @@ do
         end
     })
 
-    Tabs.Script:AddButton({
+    Tabs.Beta:AddButton({
         Title = "Fly",
         Description = "Press \"K\" to Fly!",
         Callback = function()
