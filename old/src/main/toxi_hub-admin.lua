@@ -1,17 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Toxi Hub // Admin Access", HidePremium = false, IntroText = "Toxi Hub | Admin Access", SaveConfig = true, ConfigFolder = "OrionTest"})
 
---[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
 
 -- Loaded
 
@@ -22,9 +11,11 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 
+
 -- Toxi CMD
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/tools/toxi_cmd.lua"))();
+
 
 -- Admin Tools
 
@@ -53,6 +44,7 @@ AdminTab:AddButton({
       		print("")
   	end    
 })
+
 
 -- Player
 
@@ -127,6 +119,7 @@ PlayerTab:AddTextbox({
 	end	  
 })
 
+
 -- Misc
 
 local MiscTab = Window:MakeTab({
@@ -154,6 +147,7 @@ MiscTab:AddButton({
       		print("")
   	end    
 })
+
 
 -- Tools
 
@@ -187,6 +181,54 @@ ToolsTab:AddButton({
   	end    
 })
 
+ToolsTab:AddButton({
+	Name = "Teleport GUI",
+	Callback = function()
+			local engine = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singularity5490/rbimgui-2/main/rbimgui-2.lua"))()
+
+			local plrs = game.Players
+			local lp = plrs.LocalPlayer
+		
+			local function updatePlayers(partition)
+				for _, plr in pairs(plrs:GetPlayers()) do
+					if plr ~= lp then
+						partition.new(plr.Name)
+					end
+				end
+			end
+		
+			local window1 = engine.new({
+				text = "Teleport System (BETA)",
+				size = UDim2.new(300, 200),
+			})
+		
+			window1.open()
+		
+			local tab1 = window1.new({
+				text = "Manager",
+			})
+		
+			local players = tab1.new("dropdown", {
+				text = "Players",
+			})
+		
+			updatePlayers(players)
+				players.event:Connect(function(name)
+				lp.Character.HumanoidRootPart.CFrame = plrs:FindFirstChild(name).Character.HumanoidRootPart.CFrame
+			end)
+
+			local refresh_trigger = tab1.new("button", {
+				text = "Refresh",
+			})
+			refresh_trigger.event:Connect(function()
+				players:close()
+				updatePlayers(players)
+			end)
+      	print("Loading...")
+  	end    
+})
+
+
 -- Test Scripts
 
 AdminTab:AddButton({
@@ -196,6 +238,7 @@ AdminTab:AddButton({
       		print("")
   	end    
 })
+
 
 -- Without it, the Hub won't Work.
 
