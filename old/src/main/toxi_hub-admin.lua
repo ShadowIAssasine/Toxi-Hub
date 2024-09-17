@@ -14,7 +14,7 @@ OrionLib:MakeNotification({
 
 -- Toxi CMD
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/tools/toxi_cmd.lua"))();
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/old/src/tools/toxi_cmd.lua"))();
 
 
 -- Admin Tools
@@ -40,7 +40,7 @@ AdminTab:AddButton({
 AdminTab:AddButton({
 	Name = "Admin GUI",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/tools/admin_gui.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/old/src/tools/admin_gui.lua"))()
       		print("")
   	end    
 })
@@ -135,7 +135,7 @@ local MiscSection = MiscTab:AddSection({
 MiscTab:AddButton({
 	Name = "Red Demon",
 	Callback = function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/animated/red-demon.lua"))();
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/old/src/animated/red-demon.lua"))();
       		print("")
   	end    
 })
@@ -143,7 +143,7 @@ MiscTab:AddButton({
 MiscTab:AddButton({
 	Name = "Skull Demon",
 	Callback = function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/animated/skull-demon.lua"))();
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/old/src/animated/skull-demon.lua"))();
       		print("")
   	end    
 })
@@ -164,7 +164,7 @@ local Section = ToolsTab:AddSection({
 ToolsTab:AddButton({
 	Name = "DEX Viewer",
 	Callback = function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/src/tools/dex.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/old/src/tools/dex.lua"))()
       		print("Loading...")
   	end    
 })
