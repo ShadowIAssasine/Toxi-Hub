@@ -346,7 +346,7 @@ do
 
     Tabs.Beta:AddButton({
         Title = "Fly",
-        Description = "Press \"K\" to Fly!",
+        Description = "Press \"E\" to Fly!",
         Callback = function()
             Window:Dialog({
                 Title = "!Attention!",
