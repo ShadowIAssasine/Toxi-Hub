@@ -355,7 +355,7 @@ do
                     {
                         Title = "Confirm",
                         Callback = function()
-                                loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/new/src/tools/fly.lua"))()
+                                loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/new/src/tools/fly.lua"))();
                             print("")
                         end
                     },
