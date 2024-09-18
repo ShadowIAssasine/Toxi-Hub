@@ -27,6 +27,7 @@ local Tabs = {
     Script = Window:AddTab({ Title = "Scripts", Icon = "scroll" }),
     Tool = Window:AddTab({ Title = "Tools", Icon = "wrench" }),
     Beta = Window:AddTab({ Title = "BETA", Icon = "flask-conical" }),
+    Debug = Window:AddTab({ Title = "Debug", Icon = "bug-play" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -196,32 +197,6 @@ do
 -- Script Section
 
     Tabs.Script:AddButton({
-        Title = "Dex Viewer",
-        Description = "This is for Developer Only!",
-        Callback = function()
-            Window:Dialog({
-                Title = "!Attention!",
-                Content = "Be aware that this Tool is for Developing usage!",
-                Buttons = {
-                    {
-                        Title = "Confirm",
-                        Callback = function()
-                                loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/new/src/tools/dex.lua"))()
-                            print("")
-                        end
-                    },
-                    {
-                        Title = "Cancel",
-                        Callback = function()
-                            print("")
-                        end
-                    }
-                }
-            })
-        end
-    })
-
-    Tabs.Script:AddButton({
         Title = "Aimhub",
         Description = "This will open an Seperate Window for the Aimbot!",
         Callback = function()
@@ -370,7 +345,33 @@ do
         end
     })
 
-
+    Tabs.Debug:AddButton({
+        Title = "Dex Viewer",
+        Description = "This is for Developer Only!",
+        Callback = function()
+            Window:Dialog({
+                Title = "!Attention!",
+                Content = "Be aware that this Tool is for Developing usage!",
+                Buttons = {
+                    {
+                        Title = "Confirm",
+                        Callback = function()
+                                loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowIAssasine/Toxi-Hub/main/new/src/tools/dex.lua"))()
+                            print("")
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    
     --local Keybind = Tabs.Main:AddKeybind("Keybind", {
     --    Title = "KeyBind (Toggle UI)",
     --    Mode = "Toggle", -- Always, Toggle, Hold
