@@ -27,7 +27,7 @@ local Tabs = {
     Script = Window:AddTab({ Title = "Scripts", Icon = "scroll" }),
     Tool = Window:AddTab({ Title = "Tools", Icon = "wrench" }),
     Beta = Window:AddTab({ Title = "BETA", Icon = "flask-conical" }),
-    Debug = Window:AddTab({ Title = "Debug", Icon = "bug-play" }),
+    Debug = Window:AddTab({ Title = "Debug", Icon = "bug" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
